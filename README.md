@@ -1,3 +1,4 @@
-https://github.com/chasemcolvin/survey.html/settings/pages
-</br>
 Brief Political Survey
+</br>
+https://chasemcolvin.github.io/survey.html/
+
