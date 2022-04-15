@@ -1,4 +1,2 @@
-Brief Political Survey
-</br>
-https://chasemcolvin.github.io/survey.html/
-
+Survey form built with HTML, CSS, & Bootstrap:
+[click here](https://chasemcolvin.github.io/updated-survey/)

@@ -1,71 +1,109 @@
-    <!--  Styles  -->
-        <meta charset="UTF-8">
-        <meta name="description" content="This is a short political survey form">
-        <meta name="author" content="Chase Colvin">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./style.css" rel="stylesheet" type= "text/css">
-       
-    <!-- Welcome to Chase Colvin's Political Survey Form-->
-        <div class="main">
-        <title>Chase Colvin's Political Survery Form</title>
-        <h1 id="title"><i><big>Political Survey Form</big></i></h1>
-        <hr/>
-        <p id="description"><small>Thank you for taking the time to check out my survey form - REMEMBER YOUR VOTE COUNTS!!</small></p>
-        
-    <!-- Main-Content-->
-        </br>
-        <div class="main-content">
-        <div class="form-content">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    -->
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="header-text">Social Media Survey</h1>
         <form id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input id="name" type="text" required placeholder="Enter your name"/>        
-        <label for="email" id="email-label">Email</label>
-        <input id="email" type="text" required placeholder="Enter your email"/>
-        <label for="number" id="number-label">Age</label>
-        <input id="number" type="number" min="18" max="100" required placeholder="Enter your age"/>
-        
-
-    <!--  Political Party  -->
-        <label for="dropdown">Which political party do you most-often identify with?</label>
-        <select id="dropdown">
-        <option value="left">Democratic</option>
-        <option value="right">Republican</option>
-        <option value="middle">Moderate</option>
-        <option value="other">Other</option>
-        <option value="prefer-not">Prefer not to say</option>
-        </select>
-
-    <!--  Did you vote in 2020 election  -->
-        <fieldset>
-        <legend>Did you vote in the 2020 election?</legend>
-        <div>
-        <input type="radio" name="action" checked id="yes" value="yes"/>
-        <label for="yes">Yes</label><br>
-        </div>
-        <div>
-        <input type="radio" name="action" checked id="no" value="no"/>
-        <label for="no">No</label><br>
-        </div>
-        <hr/>
-        
-    <!--  How do you identify a political candidate  -->
-        <p>How do you identify a political candidate for which you vote?
-        <span class="clue">(check all that apply)</span></p>
-        <input type="checkbox" id="tv" name="identify" value="tv">
-        <label for="tv">Television & Internet News</label><br>
-        <input type="checkbox" id="debate" name="identify" value="debate">
-        <label for="debate">Watching debates</label><br>
-        <input type="checkbox" id="research" name="identify" value="research">
-        <label for="research">Personal Research</label><br>
-        <input type="checkbox" id="party" name="identify" value="party">
-        <label for="party">Party Identification</label><br>
-        <input type="checkbox" id="other" name="identify" value="other">
-        <label for="other">Other</label><hr/>
-
-    <!--  What would you like to see improved in America - 2024  -->
-        <label for="comment">What would you like to see improved in America by 2024?</label>
-        <textarea rows="3" cols="50" id="comment">Enter your response here...</textarea>
-        <button type="submit" id="submit">Submit
-        </button>
+            <div class="form-main">
+                <label for="name" class="main-text">First name</label>
+                <input type="name" id="fname" class="form-info" required placeholder="Enter your first name">
+                <label for="name" class="main-text">Last name</label>
+                <input type="name" id="lname" class="form-info" required placeholder="Enter your last name">
+                <label for="email" class="main-text">Email</label>
+                <input type="email" id="email" class="form-info" required placeholder="Enter your email">
+                <label for="date" class="main-text">Date</label>
+                <input type="date" id="date" class="form-info">
+            </div>
+            <div class="form-main">
+                <p class="main-text">Do you actively use social media every day?</p>
+                <div class="button-container">
+                    <input class="form-input" type="radio" name="radio" id="radio" value="radio1">
+                    <label class="form-label" for="radio1">
+                        Yes
+                    </label>
+                    <div class="button-container">
+                        <input class="form-cinput" type="radio" name="radio" id="radio" value="radio2">
+                        <label class="form-label" for="radio2">
+                            No
+                        </label>
+                        <div class="button-container">
+                            <input class="form-input" type="radio" name="radio" id="radio" value="radio3">
+                            <label class="form-label" for="radio3">
+                                Taking a break
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-main">
+                <p class="main-text">What is your favorite social media platform?</p>
+                <select class="form-info">
+                    <option disabled selected value>Select an option</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="reddit">Reddit</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-main">
+                <p class="main-text">Best methods to improve social media presence?
+                    <span class="check-all"><u>(Check all that apply)</u></span>
+                </p>
+                <div class="button-container">
+                    <div class="form-check">
+                        <input class="form-input" type="checkbox" value="" id="checkbox-1">
+                        <label class="form-label" for="checkbox-1">
+                            Using multimedia
+                        </label>
+                        <div class="form-check">
+                            <input class="form-input" type="checkbox" value="" id="checkbox-2">
+                            <label class="form-label" for="checkbox-2">
+                                Audience interaction
+                            </label>
+                            <div class="form-check">
+                                <input class="form-input" type="checkbox" value="" id="checkbox-3">
+                                <label class="form-label" for="checkbox-3">
+                                    Daily activity
+                                </label>
+                                <div class="form-check">
+                                    <input class="form-input" type="checkbox" value="" id="checkbox-4">
+                                    <label class="form-label" for="checkbox-4">
+                                        Promoting online
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-main">
+                <p class="main-text">How can a business benefit from social media?</p>
+                <textarea class="text-input" name="comment" placeholder=" Type your response here..."></textarea>
+            </div>
+            <div class="form-main">
+                <button class="glow-on-hover" id="submit-button">Submit</button>
+            </div>
         </form>
-  
+    </div>
+</body>
+</html>
