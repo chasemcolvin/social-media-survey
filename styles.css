@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
@@ -28,7 +30,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   overscroll-behavior: none;
-  /*padding: 25px;*/
+  padding: 1rem;
   height: 100vh;
 }
 
@@ -38,7 +40,6 @@ p {
 }
 
 form {
-  padding: 0.5rem;
   margin-top:-5px;
   min-width: 100%;
   min-height: 100vh;
@@ -49,9 +50,12 @@ form {
   flex-flow: column nowrap;
   align-items: center;
   font-family: monospace;
+  padding: 1rem;
   margin: 0 auto;
+  /*
   margin-bottom: 100px;
   margin-top: 100px;
+  */
   max-width: 50rem;
   border-radius: 20px; 
   background-color: rgb(36,52,71);
@@ -68,7 +72,6 @@ form {
 
 .header-text {
   font-size: 3.5rem;
-  padding: 1.5rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -89,15 +92,15 @@ form {
   color: #fff;
 }
 
+.form-info {
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
 .button-container {
   margin: 0 auto;
   width: 200px;
   text-align: left;
-}
-
-.form-info {
-  padding: 0.75rem;
-  border-radius: 10px;
 }
 
 .form-label {
@@ -108,7 +111,6 @@ form {
 
 .check-all {
   display: block;
-  margin: 0.250rem;
   font-size: 1rem;
   color: #fff;
 }
@@ -125,7 +127,7 @@ form {
 #submit-button {
   display: block;
   width: 100%;
-  font-size: 20px;
+  font-size: 2rem;
   margin: 15px 0;
 }
  
